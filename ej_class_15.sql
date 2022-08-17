@@ -63,8 +63,8 @@ Analyze view actor_info:
 	y GROUP BY para agrupar por actor.
 */
 
-/*6 Materialized views, write a description, why they are used, alternatives, DBMS were they exist, etc.
-
+/*6*/
+/*
 MATERIALIZED VIEWS:
 	Almacena los resultados de una query en una tabla.
 	Se utiliza por ser más rápida que una view.
