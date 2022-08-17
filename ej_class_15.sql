@@ -52,11 +52,21 @@ FROM actor a;
 
 
 
-/*5 Analyze view actor_info, explain the entire query and specially how the sub query works.
-	Be very specific, take some time and decompose each part and give an explanation for each.
-TO DO
+/*5*/
+/*
+Analyze view actor_info:
+	Primero que nada se crea la view.
+	La view en cuestión selecciona por cada fila el ID de un actor, su nombre y su apellido (cada valor en una columna distinta). 
+	En la cuarta columna muestra todas las películas en las que actuó agrupadas por categoría y ordenadas alfabéticamente por título.
+	Finalmente se utiliza FROM, para indicar de donde se selecionarán los valores;
+	LEFT JOIN para acceder a otras tablas (film_actor, film_category y category);
+	y GROUP BY para agrupar por actor.
 */
 
 /*6 Materialized views, write a description, why they are used, alternatives, DBMS were they exist, etc.
-TO DO
+
+MATERIALIZED VIEWS:
+	Almacena los resultados de una query en una tabla.
+	Se utiliza por ser más rápida que una view.
+	Existe en varias DBMS's, pero no en MySQL. En este escenario podría implementarse como solución usar triggers o stored procedures.
 */
