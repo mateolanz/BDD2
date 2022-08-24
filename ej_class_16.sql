@@ -29,3 +29,9 @@ En resumen, como hay employee 1036, este pasaía a ser 1056 pero ya hay un 1056*
 ALTER TABLE employees 
 ADD age TINYINT,
 ADD CONSTRAINT ageCheck CHECK(age >= 16 and age <= 70);
+
+
+
+/*4- Describe the referential integrity between tables film, actor and film_actor in sakila db.
+film_actor contiene id's de actors y films, siendo una "conexión" que permite ver en que películas actua cada actor y que actores actúan en cada película
+*/
