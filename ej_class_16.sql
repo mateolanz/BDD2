@@ -22,3 +22,10 @@ UPDATE employees SET employeeNumber = employeeNumber + 20;
 Este caso es igual, con la diferencia de que, al darle 'aceptar' no se puede ejecutar:
 SQL Error [1062] [23000]: Duplicate entry '1056' for key 'employees.PRIMARY'
 En resumen, como hay employee 1036, este pasaía a ser 1056 pero ya hay un 1056*/
+
+
+
+/*3- Add a age column to the table employee where and it can only accept values from 16 up to 70 years old.*/
+ALTER TABLE employees 
+ADD age TINYINT,
+ADD CONSTRAINT ageCheck CHECK(age >= 16 and age <= 70);
