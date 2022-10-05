@@ -75,7 +75,7 @@ DELIMITER ;
 
 set @list = '';
 
-CALL list_procedure('Canada',@list);
+CALL list_procedure('Argentina',@list);
 
 SELECT @list;
 
